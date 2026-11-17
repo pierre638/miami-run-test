@@ -1,0 +1,2336 @@
+{
+  "$schema": "../../../../themes/_schema/theme.schema.json",
+  "id": "glitch-miami-run",
+  "version": "0.7.0",
+  "mode": "chase",
+  "brand": {
+    "name": "Glitch",
+    "slug": "miami-run-test",
+    "campaign": "",
+    "storeTitle": "Miami Run"
+  },
+  "palette": {
+    "bg": "#110E24",
+    "container": "#25233D",
+    "containerStroke": "#39DED0",
+    "accent": "#35E0D0",
+    "secondary": "#3B2B53",
+    "text": "#FFF4E6",
+    "danger": "#FF3B4E",
+    "surface": "#201D36",
+    "onSurface": "#FFF4E6",
+    "primary": "#FFCB73",
+    "onPrimary": "#21142E"
+  },
+  "font": {
+    "family": "Space Grotesk",
+    "weight": "600",
+    "titleFamily": "Miami Display",
+    "titleWeight": "600"
+  },
+  "audio": {
+    "volume": {
+      "lane": 0.3,
+      "cash": 0.35,
+      "dodge": 0.55,
+      "star": 0.45,
+      "siren": 0.4,
+      "crash": 1,
+      "bonus": 0.6,
+      "tick": 0.8,
+      "gameover": 0.4,
+      "ui": 0.65,
+      "best": 0.75,
+      "shot": 0.5,
+      "boom": 0.8,
+      "heli": 0.7,
+      "lock": 0.6,
+      "jump": 0.5,
+      "land": 0.5,
+      "arm": 0.6,
+      "shield": 1,
+      "buy": 0.7,
+      "deny": 0.6
+    }
+  },
+  "strings": {
+    "fr": {
+      "title": "MIAMI RUN",
+      "pageTitle": "Miami Run : 6 étoiles en 60 secondes",
+      "tagline": "6 étoiles. 60 secondes. Aucune marche arrière.",
+      "shareDescription": "Sème la police, saute les barrages, riposte et tiens 60 secondes pour décrocher la sixième étoile. Un jeu Glitch, en version de test.",
+      "play": "START",
+      "tutorial": "Tape à gauche ou à droite pour changer de voie",
+      "replay": "Rejouer",
+      "share": "Partager",
+      "newBest": "Nouveau record !",
+      "best": "Record",
+      "score": "CASH",
+      "bestScore": "Meilleur cash : ${score}",
+      "yourScore": "Ton cash : ${score}",
+      "bestScoreNamed": "{name}, ton record : ${score}",
+      "gameOver": "Fin de cavale",
+      "leaderboardGap": "Encore ${points} pour passer {rank}",
+      "leaderboardThisGame": "Cette partie : ${score}",
+      "liveToBeat": "Cash à battre : ${score} · {name}",
+      "liveYouLead": "Tu es en tête : ${score}",
+      "leaderboardLocalTitle": "Tes parties sur ce téléphone",
+      "shareText": "${score} en cavale sur Miami Run, le jeu de Glitch. Tu tiens 60 secondes ?",
+      "shareTextRank": "${score} et {rank} au classement de Miami Run. Tu fais mieux ?",
+      "chaseTicker1": "",
+      "chaseTicker2": "",
+      "chaseTicker3": "",
+      "chaseTicker4": "",
+      "chaseTicker5": "",
+      "chaseTickerBonus": "",
+      "chaseStarLine2": "La police t’a repéré",
+      "chaseStarLine3": "Le quartier est bouclé",
+      "chaseStarLine4": "Hélicoptère en approche",
+      "chaseStarLine5": "Les renforts arrivent",
+      "chaseStarLine6": "Alerte maximale · Gains doublés",
+      "chaseBonusTitle": "Alerte maximale",
+      "chaseBonusLine": "Tous les gains sont doublés",
+      "chaseJumpHint": "Tremplin en approche : fonce dessus",
+      "chaseHeliHint": "Hélicoptère en approche : sors du faisceau",
+      "chaseArmSmg": "Munitions ×{n}",
+      "chaseArmRocket": "Roquettes ×{n}",
+      "chaseArmArmor": "Protection ×{n}",
+      "chaseKill": "+{cash}",
+      "chaseBlast": "+{cash}",
+      "chaseHeliDown": "Hélicoptère neutralisé +{cash}",
+      "chaseJump": "Cascade +{cash}",
+      "chaseShield": "LE GILET A ENCAISSÉ",
+      "chaseCauseVan": "Écrasé contre un blindé",
+      "chaseCauseHeli": "Touché par l’hélico",
+      "chaseCauseJump": "Tu as raté le tremplin",
+      "chaseSummaryBonus": "6 étoiles · vague {n} · {time} s",
+      "chaseForkTitle": "Nouveau quartier",
+      "chaseForkHint": "Bifurcation : ta voie choisit la route",
+      "chaseRoute0": "Miami Beach",
+      "chaseRoute1": "Downtown",
+      "chaseRoute2": "Les Everglades",
+      "chaseRouteLine0": "Soleil, sable et cavale",
+      "chaseRouteLine1": "La ville ne dort jamais",
+      "chaseRouteLine2": "Dans les eaux troubles",
+      "chaseStars": "{n} étoiles",
+      "chaseWave": "Renforts · vague {n}",
+      "chaseRushHint": "Patrouille à tes trousses : change de voie",
+      "chaseRoadblockHint": "Barrage en approche : suis la flèche",
+      "chaseWeaveHint": "Interception en cours : suis les billets",
+      "chaseSpikeHint": "Herse déployée : change de voie",
+      "chaseCrateHint": "Chargement instable : quitte la voie du camion",
+      "chaseBoostNitro": "Nitro activée",
+      "chaseBoostMagnet": "Aimant activé",
+      "chaseNear": "De justesse +{cash}",
+      "chasePerfect": "Esquive parfaite +{cash}",
+      "chaseRushDodged": "Esquive",
+      "chaseRoadblockPassed": "Barrage passé +{cash}",
+      "chaseRam": "+{cash}",
+      "missionDone": "Objectif atteint"
+    }
+  },
+  "campaign": {
+    "start": "",
+    "end": "",
+    "rulesUrl": "",
+    "privacyUrl": "",
+    "ctaUrl": "",
+    "shareUrl": "https://pierre638.github.io/miami-run-test/",
+    "primaryAction": "replay",
+    "ctaStyle": "secondary",
+    "install": {
+      "enabled": true,
+      "text": "Pour rejouer en un geste : Partager → Sur l’écran d’accueil"
+    },
+    "reward": {
+      "type": "none",
+      "value": ""
+    },
+    "lead": {
+      "fields": [],
+      "consents": [],
+      "adultsOnly": true
+    },
+    "backend": {
+      "adapter": "none",
+      "url": "",
+      "key": ""
+    },
+    "leaderboard": {
+      "enabled": true,
+      "size": 10,
+      "teaser": true,
+      "maxScore": 6858000
+    },
+    "analytics": {
+      "adapter": "console",
+      "endpoint": ""
+    }
+  },
+  "title": {
+    "style": "classic",
+    "titleColor": "text",
+    "logoBadge": false,
+    "logo": "corner",
+    "heroHalo": "none",
+    "taglineStyle": "text"
+  },
+  "chase": {
+    "rules": {
+      "version": "2.4.0",
+      "waveTicks": 720,
+      "starWaves": 5,
+      "maxTicks": 10800,
+      "laneSub": 7,
+      "startLane": 1,
+      "readDistMm": 100000,
+      "trafficClosePm": 800,
+      "rampTicks": 60,
+      "drawMm": 200000,
+      "goneMm": 12000,
+      "ghostSepMm": 6000,
+      "lead": {
+        "v": [
+          124,
+          106,
+          92,
+          80,
+          70
+        ],
+        "step": [
+          6,
+          1
+        ],
+        "limit": 40
+      },
+      "react": {
+        "v": [
+          34,
+          29,
+          25,
+          22,
+          19
+        ],
+        "step": [
+          2,
+          1
+        ],
+        "limit": 10
+      },
+      "tol": {
+        "v": [
+          14,
+          12,
+          10,
+          8,
+          6
+        ],
+        "step": [
+          1,
+          2
+        ],
+        "limit": 4
+      },
+      "open": {
+        "v": [
+          150,
+          54,
+          54,
+          54,
+          54,
+          108,
+          36
+        ]
+      },
+      "tail": 12,
+      "laneGap": 6,
+      "minLead": 39,
+      "introLead": 72,
+      "from": {
+        "cop": 2,
+        "pair": 2,
+        "rush": 2,
+        "roadblock": 3,
+        "jump": 3,
+        "heli": 4,
+        "van": 5
+      },
+      "copPct": 50,
+      "vanPct": 25,
+      "hit": {
+        "trafficMm": 7000,
+        "trafficAheadMm": 4000,
+        "roadblockMm": 4800,
+        "roadblockAheadMm": 2600
+      },
+      "rush": {
+        "ticks": 24,
+        "telegraph": {
+          "v": [
+            84,
+            84,
+            78,
+            66,
+            57
+          ],
+          "step": [
+            2,
+            1
+          ],
+          "limit": 39
+        },
+        "clearBefore": 30,
+        "clearAfter": 8
+      },
+      "roadblock": {
+        "notice": {
+          "v": [
+            96,
+            96,
+            96,
+            78,
+            66
+          ],
+          "step": [
+            2,
+            1
+          ],
+          "limit": 60
+        },
+        "introNotice": 90
+      },
+      "heli": {
+        "ticks": 20,
+        "telegraph": {
+          "v": [
+            90,
+            90,
+            90,
+            78,
+            66
+          ],
+          "step": [
+            2,
+            1
+          ],
+          "limit": 45
+        }
+      },
+      "jump": {
+        "air": 54,
+        "runup": 6,
+        "clear": 30
+      },
+      "arms": {
+        "smg": {
+          "ammo": 2,
+          "max": 4,
+          "lead": 18
+        },
+        "rocket": {
+          "ammo": 1,
+          "max": 2,
+          "lead": 18
+        },
+        "armor": {
+          "ammo": 1,
+          "max": 1,
+          "grace": 36
+        }
+      },
+      "weave": {
+        "from": 4,
+        "ticks": 16,
+        "gap": 26,
+        "telegraph": {
+          "v": [
+            84,
+            84,
+            78,
+            66,
+            57
+          ],
+          "step": [
+            2,
+            1
+          ],
+          "limit": 45
+        }
+      },
+      "spike": {
+        "from": 4,
+        "notice": {
+          "v": [
+            96,
+            96,
+            96,
+            78,
+            66
+          ],
+          "step": [
+            2,
+            1
+          ],
+          "limit": 60
+        },
+        "introNotice": 90
+      },
+      "truck": {
+        "from": 2,
+        "crates": [
+          28,
+          16
+        ],
+        "dropMm": 2000
+      },
+      "nitro": {
+        "ticks": 150
+      },
+      "magnet": {
+        "ticks": 240,
+        "bills": 6
+      },
+      "cash": {
+        "perWave": 16,
+        "pick": 3,
+        "spacing": 6
+      },
+      "script": [
+        [
+          {
+            "k": "M",
+            "at": 54
+          },
+          {
+            "k": "D",
+            "at": 204,
+            "prev": true
+          },
+          {
+            "k": "S",
+            "at": 306,
+            "early": 60
+          },
+          {
+            "k": "M",
+            "at": 324,
+            "other": true
+          },
+          {
+            "k": "S",
+            "at": 438
+          },
+          {
+            "k": "D",
+            "at": 516
+          },
+          {
+            "k": "S",
+            "at": 600
+          },
+          {
+            "k": "G",
+            "at": 664,
+            "w": "smg"
+          }
+        ],
+        [
+          {
+            "k": "S",
+            "at": 54,
+            "cop": true
+          },
+          {
+            "k": "G",
+            "at": 90,
+            "w": "magnet"
+          },
+          {
+            "k": "D",
+            "at": 114
+          },
+          {
+            "k": "T",
+            "at": 174
+          },
+          {
+            "k": "R",
+            "at": 294
+          },
+          {
+            "k": "S",
+            "at": 372,
+            "cop": true
+          },
+          {
+            "k": "D",
+            "at": 426
+          },
+          {
+            "k": "S",
+            "at": 486
+          },
+          {
+            "k": "S",
+            "at": 552,
+            "cop": true
+          },
+          {
+            "k": "R",
+            "at": 652
+          }
+        ],
+        [
+          {
+            "k": "B",
+            "at": 96
+          },
+          {
+            "k": "S",
+            "at": 162
+          },
+          {
+            "k": "G",
+            "at": 200,
+            "w": "armor"
+          },
+          {
+            "k": "S",
+            "at": 228
+          },
+          {
+            "k": "W",
+            "at": 294
+          },
+          {
+            "k": "J",
+            "at": 372
+          },
+          {
+            "k": "G",
+            "at": 420,
+            "w": "nitro"
+          },
+          {
+            "k": "S",
+            "at": 480
+          },
+          {
+            "k": "W",
+            "at": 540
+          },
+          {
+            "k": "S",
+            "at": 592
+          }
+        ],
+        [
+          {
+            "k": "W",
+            "at": 54
+          },
+          {
+            "k": "S",
+            "at": 104
+          },
+          {
+            "k": "X",
+            "at": 146
+          },
+          {
+            "k": "H",
+            "at": 188
+          },
+          {
+            "k": "S",
+            "at": 236
+          },
+          {
+            "k": "G",
+            "at": 268,
+            "w": "smg"
+          },
+          {
+            "k": "W",
+            "at": 300
+          },
+          {
+            "k": "S",
+            "at": 350
+          },
+          {
+            "k": "Z",
+            "at": 380
+          },
+          {
+            "k": "H",
+            "at": 500
+          },
+          {
+            "k": "J",
+            "at": 540
+          },
+          {
+            "k": "R",
+            "at": 648
+          },
+          {
+            "k": "S",
+            "at": 694
+          }
+        ],
+        [
+          {
+            "k": "S",
+            "at": 54
+          },
+          {
+            "k": "W",
+            "at": 96
+          },
+          {
+            "k": "G",
+            "at": 132,
+            "w": "rocket"
+          },
+          {
+            "k": "S",
+            "at": 150,
+            "cop": true
+          },
+          {
+            "k": "D",
+            "at": 184
+          },
+          {
+            "k": "H",
+            "at": 216
+          },
+          {
+            "k": "W",
+            "at": 268
+          },
+          {
+            "k": "S",
+            "at": 312
+          },
+          {
+            "k": "W",
+            "at": 356
+          },
+          {
+            "k": "S",
+            "at": 392
+          },
+          {
+            "k": "R",
+            "at": 448
+          },
+          {
+            "k": "S",
+            "at": 480
+          },
+          {
+            "k": "S",
+            "at": 504
+          },
+          {
+            "k": "W",
+            "at": 532
+          },
+          {
+            "k": "J",
+            "at": 584
+          },
+          {
+            "k": "H",
+            "at": 680
+          }
+        ]
+      ],
+      "bonus": {
+        "beats": {
+          "v": [
+            16,
+            18,
+            20,
+            21,
+            22,
+            22,
+            23,
+            23,
+            23,
+            23
+          ]
+        },
+        "cycle": "SWRSHWXDWSJWSWSDTBWWSWWS",
+        "jitterPct": 60,
+        "arms": [
+          "smg",
+          "magnet",
+          "rocket",
+          "none",
+          "nitro",
+          "none",
+          "magnet",
+          "none",
+          "none",
+          "none"
+        ]
+      },
+      "fork": {
+        "wave": 4,
+        "notice": 150,
+        "clear": 90,
+        "open": 96,
+        "routes": [
+          {
+            "id": "plage",
+            "script": [
+              [
+                {
+                  "k": "S",
+                  "at": 104
+                },
+                {
+                  "k": "X",
+                  "at": 146
+                },
+                {
+                  "k": "J",
+                  "at": 200
+                },
+                {
+                  "k": "G",
+                  "at": 300,
+                  "w": "magnet"
+                },
+                {
+                  "k": "S",
+                  "at": 330
+                },
+                {
+                  "k": "W",
+                  "at": 380
+                },
+                {
+                  "k": "H",
+                  "at": 500
+                },
+                {
+                  "k": "J",
+                  "at": 540
+                },
+                {
+                  "k": "R",
+                  "at": 648
+                },
+                {
+                  "k": "S",
+                  "at": 694
+                }
+              ],
+              [
+                {
+                  "k": "S",
+                  "at": 54
+                },
+                {
+                  "k": "W",
+                  "at": 96
+                },
+                {
+                  "k": "G",
+                  "at": 132,
+                  "w": "rocket"
+                },
+                {
+                  "k": "S",
+                  "at": 150,
+                  "cop": true
+                },
+                {
+                  "k": "W",
+                  "at": 175
+                },
+                {
+                  "k": "J",
+                  "at": 200
+                },
+                {
+                  "k": "W",
+                  "at": 298
+                },
+                {
+                  "k": "S",
+                  "at": 330
+                },
+                {
+                  "k": "S",
+                  "at": 362
+                },
+                {
+                  "k": "S",
+                  "at": 392
+                },
+                {
+                  "k": "R",
+                  "at": 448
+                },
+                {
+                  "k": "S",
+                  "at": 492
+                },
+                {
+                  "k": "S",
+                  "at": 516
+                },
+                {
+                  "k": "S",
+                  "at": 538
+                },
+                {
+                  "k": "S",
+                  "at": 561
+                },
+                {
+                  "k": "J",
+                  "at": 584
+                },
+                {
+                  "k": "H",
+                  "at": 680
+                }
+              ]
+            ],
+            "bonus": {
+              "beats": {
+                "v": [
+                  16,
+                  18,
+                  20,
+                  21,
+                  22,
+                  22,
+                  23,
+                  23,
+                  23,
+                  23
+                ]
+              },
+              "cycle": "SWRSJWXDWSSWHWSDTBWWSWWS",
+              "arms": [
+                "smg",
+                "rocket",
+                "magnet",
+                "none",
+                "nitro",
+                "none",
+                "magnet",
+                "none",
+                "none",
+                "none"
+              ]
+            },
+            "copPct": 40,
+            "perWave": 17
+          },
+          {
+            "id": "ville",
+            "script": [
+              [
+                {
+                  "k": "S",
+                  "at": 104,
+                  "cop": true
+                },
+                {
+                  "k": "X",
+                  "at": 146
+                },
+                {
+                  "k": "H",
+                  "at": 188
+                },
+                {
+                  "k": "S",
+                  "at": 236,
+                  "cop": true
+                },
+                {
+                  "k": "G",
+                  "at": 268,
+                  "w": "smg"
+                },
+                {
+                  "k": "W",
+                  "at": 300
+                },
+                {
+                  "k": "S",
+                  "at": 350,
+                  "cop": true
+                },
+                {
+                  "k": "Z",
+                  "at": 380
+                },
+                {
+                  "k": "B",
+                  "at": 500
+                },
+                {
+                  "k": "S",
+                  "at": 560
+                },
+                {
+                  "k": "R",
+                  "at": 648
+                },
+                {
+                  "k": "S",
+                  "at": 694,
+                  "cop": true
+                }
+              ],
+              [
+                {
+                  "k": "S",
+                  "at": 54,
+                  "cop": true
+                },
+                {
+                  "k": "W",
+                  "at": 96
+                },
+                {
+                  "k": "G",
+                  "at": 132,
+                  "w": "smg"
+                },
+                {
+                  "k": "S",
+                  "at": 150,
+                  "cop": true
+                },
+                {
+                  "k": "D",
+                  "at": 184
+                },
+                {
+                  "k": "B",
+                  "at": 230
+                },
+                {
+                  "k": "W",
+                  "at": 268
+                },
+                {
+                  "k": "S",
+                  "at": 312,
+                  "cop": true
+                },
+                {
+                  "k": "W",
+                  "at": 356
+                },
+                {
+                  "k": "W",
+                  "at": 392
+                },
+                {
+                  "k": "R",
+                  "at": 448
+                },
+                {
+                  "k": "S",
+                  "at": 480
+                },
+                {
+                  "k": "S",
+                  "at": 504,
+                  "cop": true
+                },
+                {
+                  "k": "W",
+                  "at": 532
+                },
+                {
+                  "k": "W",
+                  "at": 558
+                },
+                {
+                  "k": "B",
+                  "at": 584
+                },
+                {
+                  "k": "S",
+                  "at": 640
+                },
+                {
+                  "k": "H",
+                  "at": 680
+                }
+              ]
+            ],
+            "bonus": {
+              "cycle": "SWRSHWXDWSWJSWSDTBWWSWWS",
+              "arms": [
+                "smg",
+                "magnet",
+                "rocket",
+                "none",
+                "nitro",
+                "none",
+                "rocket",
+                "none",
+                "none",
+                "none"
+              ],
+              "beats": {
+                "v": [
+                  16,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  23,
+                  23,
+                  23
+                ]
+              }
+            },
+            "copPct": 70,
+            "perWave": 17
+          },
+          {
+            "id": "marais",
+            "script": [
+              [
+                {
+                  "k": "S",
+                  "at": 104
+                },
+                {
+                  "k": "H",
+                  "at": 150
+                },
+                {
+                  "k": "S",
+                  "at": 236
+                },
+                {
+                  "k": "G",
+                  "at": 268,
+                  "w": "rocket"
+                },
+                {
+                  "k": "W",
+                  "at": 300
+                },
+                {
+                  "k": "S",
+                  "at": 350
+                },
+                {
+                  "k": "Z",
+                  "at": 380
+                },
+                {
+                  "k": "S",
+                  "at": 500
+                },
+                {
+                  "k": "H",
+                  "at": 578
+                },
+                {
+                  "k": "R",
+                  "at": 648
+                },
+                {
+                  "k": "S",
+                  "at": 694
+                }
+              ],
+              [
+                {
+                  "k": "S",
+                  "at": 54
+                },
+                {
+                  "k": "W",
+                  "at": 96
+                },
+                {
+                  "k": "G",
+                  "at": 132,
+                  "w": "rocket"
+                },
+                {
+                  "k": "S",
+                  "at": 150,
+                  "cop": true
+                },
+                {
+                  "k": "D",
+                  "at": 184
+                },
+                {
+                  "k": "H",
+                  "at": 216
+                },
+                {
+                  "k": "W",
+                  "at": 268
+                },
+                {
+                  "k": "S",
+                  "at": 312
+                },
+                {
+                  "k": "W",
+                  "at": 356
+                },
+                {
+                  "k": "W",
+                  "at": 392
+                },
+                {
+                  "k": "R",
+                  "at": 448
+                },
+                {
+                  "k": "S",
+                  "at": 480
+                },
+                {
+                  "k": "W",
+                  "at": 504
+                },
+                {
+                  "k": "W",
+                  "at": 532
+                },
+                {
+                  "k": "W",
+                  "at": 564
+                },
+                {
+                  "k": "H",
+                  "at": 596
+                },
+                {
+                  "k": "W",
+                  "at": 638
+                },
+                {
+                  "k": "H",
+                  "at": 680
+                }
+              ]
+            ],
+            "bonus": {
+              "cycle": "SWRSHWXDWSWJSWSDTBWWSWWS",
+              "arms": [
+                "rocket",
+                "magnet",
+                "rocket",
+                "none",
+                "nitro",
+                "none",
+                "rocket",
+                "none",
+                "none",
+                "none"
+              ],
+              "beats": {
+                "v": [
+                  16,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  23,
+                  23,
+                  23
+                ]
+              }
+            },
+            "vanPct": 40,
+            "perWave": 17
+          }
+        ],
+        "settle": true
+      },
+      "gen": {
+        "tries": 14,
+        "slide": 6,
+        "isolate": 16
+      },
+      "score": {
+        "tick": 10,
+        "bill": 500,
+        "near": 250,
+        "perfect": 500,
+        "roadblock": 1000,
+        "kill": 750,
+        "blast": 1500,
+        "heli": 5000,
+        "jump": 1500,
+        "ram": 750,
+        "nearTicks": 18,
+        "perfectTicks": 6,
+        "dwellTicks": 12,
+        "bonusMult": 2
+      },
+      "input": {
+        "max": 3000
+      },
+      "cars": {
+        "blanche": {},
+        "tacot": {},
+        "triporteur": {
+          "billAdd": 25
+        },
+        "taxi": {
+          "tickAdd": 1
+        },
+        "golfette": {},
+        "glacon": {
+          "billAdd": 50
+        },
+        "hotdog": {
+          "nearAdd": 125,
+          "perfectAdd": 250
+        },
+        "voyage": {
+          "armor": 1
+        },
+        "brute": {
+          "smg": 2
+        },
+        "corniche": {
+          "billAdd": 100
+        },
+        "basse": {
+          "nearAdd": 250,
+          "perfectAdd": 500
+        },
+        "bayou": {
+          "smg": 2,
+          "jumpAdd": 750
+        },
+        "secours": {
+          "armor": 1,
+          "grace": 24
+        },
+        "fleche": {
+          "jumpAdd": 1500
+        },
+        "flamant": {
+          "smg": 2,
+          "killAdd": 750
+        },
+        "benne": {
+          "armor": 1,
+          "roadblockAdd": 2000
+        },
+        "pompier": {
+          "armor": 1,
+          "rocket": 1
+        },
+        "volee": {
+          "smg": 4,
+          "killAdd": 375
+        },
+        "limo": {
+          "tickAdd": 3
+        },
+        "fourgon": {
+          "billAdd": 125
+        },
+        "eclair": {
+          "tickAdd": 2,
+          "billAdd": 100
+        },
+        "monstre": {
+          "armor": 2,
+          "armorMax": 1
+        },
+        "blinde": {
+          "armor": 2,
+          "armorMax": 1,
+          "grace": 24
+        },
+        "char": {
+          "rocket": 1,
+          "rocketMax": 1,
+          "armor": 1,
+          "armorMax": 1
+        }
+      }
+    },
+    "view": {
+      "vpY": 800,
+      "horizonY": 840,
+      "hazeY": 900,
+      "focal": 2000,
+      "camHeightM": 8.2,
+      "camDistM": 20,
+      "laneWidthM": 3.6,
+      "artUnit": 7.2,
+      "farBoost": 1.25,
+      "farBoostFrom": 0.5,
+      "farBoostFull": 0.15,
+      "steerTopY": 350,
+      "dash": {
+        "lenM": 4,
+        "periodM": 13,
+        "widthM": 0.1
+      },
+      "edgeWidthM": 0.25,
+      "grid": {
+        "periodM": 6,
+        "alpha": 0.22
+      },
+      "props": {
+        "periodM": 18,
+        "offsetM": 6.8,
+        "kinds": [
+          "palm",
+          "palm",
+          "lamp",
+          "palm"
+        ]
+      },
+      "cash": {
+        "liftLane": 0.25,
+        "boost": 1.6,
+        "minWidth": 18
+      },
+      "lampTicks": 20,
+      "rush": {
+        "startM": 14,
+        "contactM": 4.4,
+        "peakM": 1.5,
+        "approachTicks": 29,
+        "fallTicks": 18,
+        "bandToM": 10
+      },
+      "board": {
+        "untilM": 60
+      },
+      "countTicks": 30,
+      "seedGraceTicks": 120,
+      "crashTicks": 54,
+      "hitchPauseMs": 250,
+      "maxFrameMs": 100,
+      "hud": {
+        "cashEveryTicks": 12,
+        "hintRuns": 3,
+        "tickerSpeed": 140,
+        "bonusStar": true
+      },
+      "colors": {
+        "sky": [
+          "#3A1C71",
+          "#7A2A8C",
+          "#D2477E",
+          "#F5795A",
+          "#FFC15E"
+        ],
+        "skyNight": [
+          "#060818",
+          "#0C1236",
+          "#162058",
+          "#27307A",
+          "#4A3C96"
+        ],
+        "ground": "#967480",
+        "road": "#383143",
+        "edge": "#F6DBB5",
+        "dash": "#FFF4E6",
+        "grid": "#644954",
+        "band": "#FF3B4E",
+        "lamp": [
+          "#FF3B4E",
+          "#3B8BFF"
+        ],
+        "cover": "#150A2E",
+        "spot": "#E9F6FF",
+        "spotLock": "#FF3B4E",
+        "tracer": "#FFE27A",
+        "shadow": "#100A1C",
+        "nitro": "#35E0D0",
+        "magnet": "#FF4FA3"
+      },
+      "jump": {
+        "heightM": 3.2,
+        "scale": 1.22,
+        "rampAheadM": 5,
+        "wallAheadM": 16
+      },
+      "heli": {
+        "approachTicks": 90,
+        "leaveTicks": 45,
+        "aheadM": 26,
+        "skyY": 490,
+        "beamAlpha": 0.28
+      },
+      "arm": {
+        "liftLane": 0.3,
+        "boost": 1.8,
+        "minWidth": 26
+      },
+      "fire": {
+        "tracerTicks": 8,
+        "boomTicks": 18
+      },
+      "weave": {
+        "approachTicks": 26,
+        "fallTicks": 14,
+        "bandAlpha": 0.35
+      },
+      "crate": {
+        "fallTicks": 18,
+        "heightM": 1.6
+      },
+      "boost": {
+        "flameM": 3.2,
+        "ringLanes": 1.3
+      },
+      "stages": [
+        {
+          "sky": [
+            "#534077",
+            "#9C6EB7",
+            "#E99AAE",
+            "#FFC29A",
+            "#FFDAA3"
+          ],
+          "ground": "#A89182",
+          "road": "#47424C",
+          "grid": "#644954",
+          "edge": "#C7C0B5",
+          "sunDrop": 0
+        },
+        {
+          "sky": [
+            "#534077",
+            "#9C6EB7",
+            "#E99AAE",
+            "#FFC29A",
+            "#FFDAA3"
+          ],
+          "ground": "#A89182",
+          "road": "#47424C",
+          "grid": "#644954",
+          "edge": "#C7C0B5",
+          "sunDrop": 25
+        },
+        {
+          "sky": [
+            "#534077",
+            "#9C6EB7",
+            "#E99AAE",
+            "#FFC29A",
+            "#FFDAA3"
+          ],
+          "ground": "#A89182",
+          "road": "#47424C",
+          "grid": "#644954",
+          "edge": "#C7C0B5",
+          "sunDrop": 50
+        },
+        {
+          "sky": [
+            "#211939",
+            "#4C3564",
+            "#865276",
+            "#B57188",
+            "#E5A38A"
+          ],
+          "ground": "#493F58",
+          "road": "#242034",
+          "grid": "#644954",
+          "edge": "#F6DBB5",
+          "sunDrop": 75
+        },
+        {
+          "sky": [
+            "#211939",
+            "#4C3564",
+            "#865276",
+            "#B57188",
+            "#E5A38A"
+          ],
+          "ground": "#493F58",
+          "road": "#242034",
+          "grid": "#644954",
+          "edge": "#F6DBB5",
+          "sunDrop": 100
+        },
+        {
+          "sky": [
+            "#211939",
+            "#4C3564",
+            "#865276",
+            "#B57188",
+            "#E5A38A"
+          ],
+          "ground": "#493F58",
+          "road": "#242034",
+          "grid": "#644954",
+          "edge": "#F6DBB5",
+          "sunDrop": 125,
+          "skins": {
+            "cop": "jeep",
+            "cop-alt": "jeep-alt",
+            "block": "tank",
+            "block-alt": "tank-alt",
+            "van": "van-army",
+            "van-alt": "van-army-alt"
+          }
+        }
+      ],
+      "fork": {
+        "gate": "route-gate",
+        "signLiftM": 3.97,
+        "signScale": 1,
+        "tintAlpha": 0.18,
+        "clearM": 40,
+        "board": {
+          "y": 610,
+          "icon": 4,
+          "hideTicks": 18
+        },
+        "routes": [
+          {
+            "sign": "route-sign-plage",
+            "color": "#35E0D0",
+            "skyline": "route-sea",
+            "backpalm": "backpalm",
+            "props": {
+              "periodM": 18,
+              "offsetM": 8.2,
+              "kinds": [
+                "palm",
+                "route-umbrella",
+                "route-surf",
+                "palm"
+              ]
+            },
+            "stages": [
+              {
+                "sky": [
+                  "#506DB0",
+                  "#B494BF",
+                  "#E3C4BB",
+                  "#F6D9AD",
+                  "#FFE9C4"
+                ],
+                "ground": "#DDBE89",
+                "road": "#697C81",
+                "grid": "#644954",
+                "edge": "#FFF0D1",
+                "sunDrop": 15
+              },
+              {
+                "sky": [
+                  "#506DB0",
+                  "#B494BF",
+                  "#E3C4BB",
+                  "#F6D9AD",
+                  "#FFE9C4"
+                ],
+                "ground": "#DDBE89",
+                "road": "#697C81",
+                "grid": "#644954",
+                "edge": "#FFF0D1",
+                "sunDrop": 27
+              },
+              {
+                "sky": [
+                  "#506DB0",
+                  "#B494BF",
+                  "#E3C4BB",
+                  "#F6D9AD",
+                  "#FFE9C4"
+                ],
+                "ground": "#DDBE89",
+                "road": "#697C81",
+                "grid": "#644954",
+                "edge": "#FFF0D1",
+                "sunDrop": 39,
+                "skins": {
+                  "cop": "jeep",
+                  "cop-alt": "jeep-alt",
+                  "block": "tank",
+                  "block-alt": "tank-alt",
+                  "van": "van-army",
+                  "van-alt": "van-army-alt"
+                }
+              }
+            ]
+          },
+          {
+            "sign": "route-sign-ville",
+            "color": "#FF4FA3",
+            "skyline": "route-towers",
+            "backpalm": "",
+            "props": {
+              "periodM": 17,
+              "offsetM": 6.8,
+              "kinds": [
+                "lamp",
+                "route-neon",
+                "palm",
+                "lamp"
+              ]
+            },
+            "stages": [
+              {
+                "sky": [
+                  "#030613",
+                  "#080D20",
+                  "#10152C",
+                  "#1D2341",
+                  "#30344D"
+                ],
+                "ground": "#101525",
+                "road": "#171C2B",
+                "grid": "#644954",
+                "edge": "#7383A5",
+                "sunDrop": 500
+              },
+              {
+                "sky": [
+                  "#030613",
+                  "#080D20",
+                  "#10152C",
+                  "#1D2341",
+                  "#30344D"
+                ],
+                "ground": "#101525",
+                "road": "#171C2B",
+                "grid": "#644954",
+                "edge": "#7383A5",
+                "sunDrop": 500
+              },
+              {
+                "sky": [
+                  "#030613",
+                  "#080D20",
+                  "#10152C",
+                  "#1D2341",
+                  "#30344D"
+                ],
+                "ground": "#101525",
+                "road": "#171C2B",
+                "grid": "#644954",
+                "edge": "#7383A5",
+                "sunDrop": 500,
+                "skins": {
+                  "cop": "jeep",
+                  "cop-alt": "jeep-alt",
+                  "block": "tank",
+                  "block-alt": "tank-alt",
+                  "van": "van-army",
+                  "van-alt": "van-army-alt"
+                }
+              }
+            ]
+          },
+          {
+            "sign": "route-sign-marais",
+            "color": "#FF7A2E",
+            "skyline": "route-mangroves",
+            "backpalm": "route-cypress",
+            "props": {
+              "periodM": 15,
+              "offsetM": 8.5,
+              "kinds": [
+                "route-cypress",
+                "route-reeds",
+                "route-mangrove",
+                "route-stilt",
+                "route-heron",
+                "route-airboat"
+              ]
+            },
+            "stages": [
+              {
+                "sky": [
+                  "#1B3034",
+                  "#2D4B4C",
+                  "#54726A",
+                  "#84998A",
+                  "#C4CAA8"
+                ],
+                "ground": "#293F3C",
+                "road": "#6A6855",
+                "grid": "#644954",
+                "edge": "#C2B88D",
+                "sunDrop": 190
+              },
+              {
+                "sky": [
+                  "#1B3034",
+                  "#2D4B4C",
+                  "#54726A",
+                  "#84998A",
+                  "#C4CAA8"
+                ],
+                "ground": "#293F3C",
+                "road": "#6A6855",
+                "grid": "#644954",
+                "edge": "#C2B88D",
+                "sunDrop": 202
+              },
+              {
+                "sky": [
+                  "#1B3034",
+                  "#2D4B4C",
+                  "#54726A",
+                  "#84998A",
+                  "#C4CAA8"
+                ],
+                "ground": "#293F3C",
+                "road": "#6A6855",
+                "grid": "#644954",
+                "edge": "#C2B88D",
+                "sunDrop": 214,
+                "skins": {
+                  "cop": "jeep",
+                  "cop-alt": "jeep-alt",
+                  "block": "tank",
+                  "block-alt": "tank-alt",
+                  "van": "van-army",
+                  "van-alt": "van-army-alt"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "garage": {
+      "start": "blanche",
+      "cars": [
+        {
+          "id": "blanche",
+          "sprite": "player",
+          "name": "La Blanche",
+          "family": "Sportives",
+          "perk": "Ta voiture de départ",
+          "price": 0
+        },
+        {
+          "id": "tacot",
+          "sprite": "ride-tacot",
+          "name": "Le Tacot",
+          "family": "En ville",
+          "perk": "Aucun atout. Elle roule, c’est déjà ça.",
+          "price": 150000
+        },
+        {
+          "id": "triporteur",
+          "sprite": "ride-triporteur",
+          "name": "Le Triporteur",
+          "family": "En ville",
+          "perk": "Billets +5 %",
+          "price": 250000
+        },
+        {
+          "id": "taxi",
+          "sprite": "ride-taxi",
+          "name": "Le Taxi",
+          "family": "En ville",
+          "perk": "Le compteur tourne : +10 % sur l’argent du temps",
+          "price": 400000
+        },
+        {
+          "id": "golfette",
+          "sprite": "ride-golfette",
+          "name": "La Golfette",
+          "family": "Farfelus",
+          "perk": "Aucun atout. Du style.",
+          "price": 600000
+        },
+        {
+          "id": "glacon",
+          "sprite": "ride-glacon",
+          "name": "Le Glacier",
+          "family": "Farfelus",
+          "perk": "Billets +10 %",
+          "price": 900000
+        },
+        {
+          "id": "hotdog",
+          "sprite": "ride-hotdog",
+          "name": "Le Hot-Dog",
+          "family": "Farfelus",
+          "perk": "Esquives de justesse +50 %",
+          "price": 1200000
+        },
+        {
+          "id": "voyage",
+          "sprite": "ride-voyage",
+          "name": "Le Dernier Voyage",
+          "family": "Farfelus",
+          "perk": "Part avec un gilet",
+          "price": 2000000
+        },
+        {
+          "id": "brute",
+          "sprite": "ride-brute",
+          "name": "La Brute",
+          "family": "Gros bras",
+          "perk": "Part avec la mitraillette ×2",
+          "price": 4000000
+        },
+        {
+          "id": "corniche",
+          "sprite": "ride-corniche",
+          "name": "La Côtière",
+          "family": "Sportives",
+          "perk": "Billets +20 %",
+          "price": 5000000
+        },
+        {
+          "id": "basse",
+          "sprite": "ride-basse",
+          "name": "La Basse",
+          "family": "Gros bras",
+          "perk": "Esquives de justesse ×2",
+          "price": 6000000
+        },
+        {
+          "id": "bayou",
+          "sprite": "ride-bayou",
+          "name": "Le Bayou",
+          "family": "Gros bras",
+          "perk": "Mitraillette ×2 au départ, cascades +50 %",
+          "price": 8000000
+        },
+        {
+          "id": "secours",
+          "sprite": "ride-secours",
+          "name": "Le Secours",
+          "family": "Détournés",
+          "perk": "Part avec un gilet, répit plus long après un choc",
+          "price": 9000000
+        },
+        {
+          "id": "fleche",
+          "sprite": "ride-fleche",
+          "name": "La Flèche",
+          "family": "Sportives",
+          "perk": "Cascades ×2",
+          "price": 10000000
+        },
+        {
+          "id": "flamant",
+          "sprite": "ride-flamant",
+          "name": "La Flamant",
+          "family": "Sportives",
+          "perk": "Mitraillette ×2, ses tirs paient double",
+          "price": 12000000
+        },
+        {
+          "id": "benne",
+          "sprite": "ride-benne",
+          "name": "La Benne",
+          "family": "Détournés",
+          "perk": "Part avec un gilet, barrages payés triple",
+          "price": 14000000
+        },
+        {
+          "id": "pompier",
+          "sprite": "ride-pompier",
+          "name": "Le Pompier",
+          "family": "Détournés",
+          "perk": "Part avec un gilet et une roquette",
+          "price": 16000000
+        },
+        {
+          "id": "volee",
+          "sprite": "ride-volee",
+          "name": "La Volée",
+          "family": "Détournés",
+          "perk": "Mitraillette ×4 au départ, ses tirs paient +50 %",
+          "price": 18000000
+        },
+        {
+          "id": "limo",
+          "sprite": "ride-limo",
+          "name": "La Limo",
+          "family": "Gros calibres",
+          "perk": "+30 % sur l’argent du temps",
+          "price": 20000000
+        },
+        {
+          "id": "fourgon",
+          "sprite": "ride-fourgon",
+          "name": "Le Fourgon",
+          "family": "Gros calibres",
+          "perk": "Billets +25 %",
+          "price": 22000000
+        },
+        {
+          "id": "eclair",
+          "sprite": "ride-eclair",
+          "name": "L’Éclair",
+          "family": "Sportives",
+          "perk": "+20 % sur le temps et sur les billets",
+          "price": 25000000
+        },
+        {
+          "id": "monstre",
+          "sprite": "ride-monstre",
+          "name": "Le Monstre",
+          "family": "Gros bras",
+          "perk": "Part avec deux gilets, peut en porter deux",
+          "price": 30000000
+        },
+        {
+          "id": "blinde",
+          "sprite": "ride-blinde",
+          "name": "Le Blindé",
+          "family": "Gros calibres",
+          "perk": "Part avec deux gilets, en porte deux, répit plus long",
+          "price": 35000000
+        },
+        {
+          "id": "char",
+          "sprite": "ride-char",
+          "name": "Le Char",
+          "family": "Gros calibres",
+          "perk": "Roquette et gilet au départ, porte trois roquettes et deux gilets",
+          "price": 40000000
+        }
+      ],
+      "cast": {
+        "start": "dede",
+        "members": [
+          {
+            "id": "dede",
+            "sprite": "char-dede",
+            "name": "Dédé Taxi",
+            "role": "Le chauffeur",
+            "line": "Trente ans de taxi. Plus rien ne l’étonne.",
+            "price": 0
+          },
+          {
+            "id": "carla",
+            "sprite": "char-carla",
+            "name": "Carla Carbu",
+            "role": "La mécano",
+            "line": "Elle règle un moteur à l’oreille.",
+            "price": 250000
+          },
+          {
+            "id": "max",
+            "sprite": "char-max",
+            "name": "Max Abonnés",
+            "role": "L’influenceur",
+            "line": "Il filme sa propre cavale en direct.",
+            "price": 500000
+          },
+          {
+            "id": "mamie",
+            "sprite": "char-mamie",
+            "name": "Mamie Coffre-Fort",
+            "role": "La perceuse de coffres",
+            "line": "Elle entend un coffre s’ouvrir à trois rues.",
+            "price": 1000000
+          },
+          {
+            "id": "cornet",
+            "sprite": "char-cornet",
+            "name": "Monsieur Cornet",
+            "role": "Le glacier",
+            "line": "Personne ne soupçonne le camion de glaces.",
+            "price": 2000000
+          },
+          {
+            "id": "stagiaire",
+            "sprite": "char-stagiaire",
+            "name": "Le Stagiaire",
+            "role": "Le petit nouveau",
+            "line": "Premier jour. Déjà six étoiles.",
+            "price": 3000000
+          },
+          {
+            "id": "pixel",
+            "sprite": "char-pixel",
+            "name": "Pixel",
+            "role": "La hackeuse",
+            "line": "Elle met tous les feux au vert.",
+            "price": 5000000
+          },
+          {
+            "id": "bebert",
+            "sprite": "char-bebert",
+            "name": "Bébert Biceps",
+            "role": "Le gros bras",
+            "line": "Il ne sort jamais sans Kiki.",
+            "price": 8000000
+          }
+        ]
+      }
+    },
+    "missions": {
+      "seed": "miami-run",
+      "zone": "Europe/Paris",
+      "allBonus": 250000,
+      "streak": [
+        0,
+        25000,
+        50000,
+        75000,
+        100000,
+        125000,
+        150000
+      ],
+      "pool": [
+        {
+          "id": "parties-3",
+          "slot": 0,
+          "metric": "runs",
+          "scope": "day",
+          "goal": 3,
+          "reward": 75000,
+          "text": "Joue 3 parties aujourd’hui"
+        },
+        {
+          "id": "cash-jour-200k",
+          "slot": 0,
+          "metric": "cash",
+          "scope": "day",
+          "goal": 200000,
+          "reward": 75000,
+          "text": "Gagne $200 000 aujourd’hui"
+        },
+        {
+          "id": "temps-jour-90",
+          "slot": 0,
+          "metric": "seconds",
+          "scope": "day",
+          "goal": 90,
+          "reward": 75000,
+          "text": "Tiens 90 secondes au total aujourd’hui"
+        },
+        {
+          "id": "etoiles-3",
+          "slot": 0,
+          "metric": "stars",
+          "scope": "run",
+          "goal": 3,
+          "reward": 75000,
+          "text": "Atteins 3 étoiles"
+        },
+        {
+          "id": "degomme-2",
+          "slot": 0,
+          "metric": "kills",
+          "scope": "run",
+          "goal": 2,
+          "reward": 75000,
+          "text": "Dégomme 2 véhicules en une partie"
+        },
+        {
+          "id": "barrage-1",
+          "slot": 0,
+          "metric": "roadblocks",
+          "scope": "run",
+          "goal": 1,
+          "reward": 75000,
+          "text": "Passe un barrage"
+        },
+        {
+          "id": "cascade-1",
+          "slot": 0,
+          "metric": "jumps",
+          "scope": "run",
+          "goal": 1,
+          "reward": 75000,
+          "text": "Réussis une cascade sur un tremplin"
+        },
+        {
+          "id": "billets-30",
+          "slot": 0,
+          "metric": "bills",
+          "scope": "run",
+          "goal": 35,
+          "reward": 75000,
+          "text": "Ramasse 35 billets en une partie"
+        },
+        {
+          "id": "justesse-3",
+          "slot": 0,
+          "metric": "dodges",
+          "scope": "run",
+          "goal": 3,
+          "reward": 75000,
+          "text": "Réussis 3 esquives de justesse"
+        },
+        {
+          "id": "millimetre-1",
+          "slot": 0,
+          "metric": "perfect",
+          "scope": "run",
+          "goal": 1,
+          "reward": 75000,
+          "text": "Réussis une esquive au millimètre"
+        },
+        {
+          "id": "degomme-jour-10",
+          "slot": 1,
+          "metric": "kills",
+          "scope": "day",
+          "goal": 10,
+          "reward": 200000,
+          "text": "Dégomme 10 véhicules aujourd’hui"
+        },
+        {
+          "id": "cash-jour-1500k",
+          "slot": 1,
+          "metric": "cash",
+          "scope": "day",
+          "goal": 1500000,
+          "reward": 200000,
+          "text": "Gagne $1 500 000 aujourd’hui"
+        },
+        {
+          "id": "parties-5",
+          "slot": 1,
+          "metric": "runs",
+          "scope": "day",
+          "goal": 5,
+          "reward": 200000,
+          "text": "Joue 5 parties aujourd’hui"
+        },
+        {
+          "id": "etoiles-6",
+          "slot": 1,
+          "metric": "stars",
+          "scope": "run",
+          "goal": 6,
+          "reward": 200000,
+          "text": "Décroche la 6e étoile"
+        },
+        {
+          "id": "cascades-3",
+          "slot": 1,
+          "metric": "jumps",
+          "scope": "run",
+          "goal": 2,
+          "reward": 200000,
+          "text": "Réussis 2 cascades sur la PLAGE"
+        },
+        {
+          "id": "helico-1",
+          "slot": 1,
+          "metric": "helis",
+          "scope": "run",
+          "goal": 1,
+          "reward": 200000,
+          "text": "Abats l’hélico sur la route du MARAIS"
+        },
+        {
+          "id": "billets-80",
+          "slot": 1,
+          "metric": "bills",
+          "scope": "run",
+          "goal": 85,
+          "reward": 200000,
+          "text": "Ramasse 85 billets en une partie"
+        },
+        {
+          "id": "justesse-15",
+          "slot": 1,
+          "metric": "dodges",
+          "scope": "run",
+          "goal": 15,
+          "reward": 200000,
+          "text": "Réussis 15 esquives de justesse"
+        },
+        {
+          "id": "millimetre-3",
+          "slot": 1,
+          "metric": "perfect",
+          "scope": "run",
+          "goal": 3,
+          "reward": 200000,
+          "text": "Réussis 3 esquives au millimètre"
+        },
+        {
+          "id": "parties-7",
+          "slot": 2,
+          "metric": "runs",
+          "scope": "day",
+          "goal": 7,
+          "reward": 500000,
+          "text": "Joue 7 parties aujourd’hui"
+        },
+        {
+          "id": "temps-jour-300",
+          "slot": 2,
+          "metric": "seconds",
+          "scope": "day",
+          "goal": 300,
+          "reward": 500000,
+          "text": "Tiens 5 minutes au total aujourd’hui"
+        },
+        {
+          "id": "cash-jour-3000k",
+          "slot": 2,
+          "metric": "cash",
+          "scope": "day",
+          "goal": 3000000,
+          "reward": 500000,
+          "text": "Gagne $3 000 000 aujourd’hui"
+        },
+        {
+          "id": "temps-75",
+          "slot": 2,
+          "metric": "seconds",
+          "scope": "run",
+          "goal": 75,
+          "reward": 500000,
+          "text": "Tiens 75 secondes en une partie"
+        },
+        {
+          "id": "cascades-5",
+          "slot": 2,
+          "metric": "jumps",
+          "scope": "run",
+          "goal": 5,
+          "reward": 500000,
+          "text": "Réussis 5 cascades sur la PLAGE"
+        },
+        {
+          "id": "barrages-2",
+          "slot": 2,
+          "metric": "roadblocks",
+          "scope": "run",
+          "goal": 2,
+          "reward": 500000,
+          "text": "Passe 2 barrages en VILLE"
+        },
+        {
+          "id": "billets-90",
+          "slot": 2,
+          "metric": "bills",
+          "scope": "run",
+          "goal": 100,
+          "reward": 500000,
+          "text": "Ramasse 100 billets en une partie"
+        },
+        {
+          "id": "justesse-30",
+          "slot": 2,
+          "metric": "dodges",
+          "scope": "run",
+          "goal": 30,
+          "reward": 500000,
+          "text": "Réussis 30 esquives de justesse"
+        },
+        {
+          "id": "millimetre-5",
+          "slot": 2,
+          "metric": "perfect",
+          "scope": "run",
+          "goal": 5,
+          "reward": 500000,
+          "text": "Réussis 5 esquives au millimètre"
+        }
+      ]
+    }
+  },
+  "placeholder": {
+    "active": false,
+    "style": "kawaii",
+    "seed": 42
+  },
+  "credits": [
+    {
+      "asset": "fonts/display.woff2",
+      "author": "Florian Karsten (Space Grotesk)",
+      "license": "OFL-1.1",
+      "url": "https://fontsource.org/fonts/space-grotesk"
+    },
+    {
+      "asset": "fonts/hud.ttf (Barlow Condensed ExtraBold Italic)",
+      "author": "Jeremy Tribby (Barlow Condensed)",
+      "license": "OFL-1.1",
+      "url": "https://github.com/google/fonts/tree/main/ofl/barlowcondensed"
+    },
+    {
+      "asset": "logo.png",
+      "author": "Glitch (Le Bonbon)",
+      "license": "brand-proprietary",
+      "note": "monogramme officiel Glitch, fourni par Le Bonbon, centré dans un carré transparent de 1200 px"
+    },
+    {
+      "asset": "chase/*.webp (voitures, police, fourgon, hélicoptère, barrage, tremplin, billet, armes, explosions, décors, étoiles, voiture nerveuse, herse, camion, caisse, nitro, aimant)",
+      "author": "Le Bonbon / Glitch — refonte assistée par génération d’images",
+      "license": "brand-proprietary",
+      "note": "Nouvelle direction artistique Miami 3D stylisée, pack du 17 novembre 2026, intégré et optimisé pour ce jeu. Sources : pack miami-run-assets-3d."
+    },
+    {
+      "asset": "hero.png, bg.png",
+      "author": "Le Bonbon / Glitch — refonte assistée par génération d’images",
+      "license": "brand-proprietary",
+      "note": "Nouvelle direction artistique Miami 3D stylisée, pack du 17 novembre 2026, intégré et optimisé pour ce jeu. Sources : pack miami-run-assets-3d."
+    },
+    {
+      "asset": "miami-wordmark.svg (logo Miami Run)",
+      "author": "Le Bonbon / Glitch, lettres : Jeremy Tribby (Barlow Condensed ExtraBold Italic)",
+      "license": "brand-proprietary",
+      "note": "logo de la direction artistique 3D du 17 novembre 2026 (relief, contour, dégradé, étoiles) ; lettres vectorisées depuis Barlow Condensed ExtraBold Italic (SIL OFL 1.1, fonts/hud.ttf), aucune police chargée pour l’afficher"
+    },
+    {
+      "asset": "sky-sunset.webp, material-surfaces.webp (ciel, matières de la route et des façades)",
+      "author": "Le Bonbon / Glitch",
+      "license": "brand-proprietary",
+      "note": "Direction artistique Miami 3D stylisée du 17 novembre 2026 : ciel nuageux généré pour cette version, atlas de matières (asphalte, enduit, pierre, bois) dédié à ce jeu."
+    },
+    {
+      "asset": "prize/banner.png, prize/card.jpg, prize/item-1.png (lot)",
+      "author": "Le Bonbon",
+      "license": "brand-proprietary",
+      "note": "création Le Bonbon pour son média Glitch : illustrations génériques du lot en pixel art (console, manette, boîtier), sans marque ni logo, non contractuelles (2026-11-12)"
+    },
+    {
+      "asset": "chase/char-*.webp (portraits des personnages du garage)",
+      "author": "Le Bonbon / Glitch — refonte assistée par génération d’images",
+      "license": "brand-proprietary",
+      "note": "Nouvelle direction artistique Miami 3D stylisée, pack du 17 novembre 2026, intégré et optimisé pour ce jeu. Sources : pack miami-run-assets-3d."
+    },
+    {
+      "asset": "chase/route-*.webp (panneaux, portique et décors des trois routes)",
+      "author": "Le Bonbon / Glitch — refonte assistée par génération d’images",
+      "license": "brand-proprietary",
+      "note": "Nouvelle direction artistique Miami 3D stylisée, pack du 17 novembre 2026, intégré et optimisé pour ce jeu. Sources : pack miami-run-assets-3d."
+    },
+    {
+      "asset": "chase/ride-*.webp (véhicules du garage)",
+      "author": "Le Bonbon / Glitch — refonte assistée par génération d’images",
+      "license": "brand-proprietary",
+      "note": "Nouvelle direction artistique Miami 3D stylisée, pack du 17 novembre 2026, intégré et optimisé pour ce jeu. Sources : pack miami-run-assets-3d. Ambulance (ride-secours) : la croix rouge du pack est remplacée par un tracé de pouls, comme en pixel art (emblème protégé)."
+    },
+    {
+      "asset": "sfx/*",
+      "author": "Le Bonbon",
+      "license": "CC0-1.0",
+      "note": "sons synthétisés par Le Bonbon (2026-11-12, huit sons ajoutés le 2026-11-13, puis deux sons du garage)"
+    }
+  ]
+}
